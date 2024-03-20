@@ -48,7 +48,7 @@ SHELL=/bin/sh
 MKDIR=mkdir -p
 INCLUDES=-I utils -I parsing -I typing -I bytecomp -I asmcomp -I driver \
          -I toplevel -I ilcomp
-COMPFLAGS=$(REBUILDFLAG)  -warn-error A $(INCLUDES)
+COMPFLAGS=$(REBUILDFLAG)  -warn-error A-21-26 $(INCLUDES)
 LINKFLAGS=$(REBUILDFLAG) $(INCLUDES) 
 
 OPTUTILS=utils/misc.cmo utils/tbl.cmo utils/config.cmo \
